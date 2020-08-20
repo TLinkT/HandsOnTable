@@ -1,0 +1,27 @@
+<div class="container">
+
+  <div class="row">
+  <div class="col">
+    <div ngbDropdown class="d-inline-block">
+      <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Layouts</button>
+      <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+        <div *ngFor="let layout of layouts">
+          <button ngbDropdownItem #dropDownItem (click)="buscarLayout(layout.nome)">{{layout.nome}}</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hot-table class="hot-table" #dados
+      [colHeaders]="true"
+      [rowHeaders]="false"
+      [data]="dataset">
+        <div class="column-factory" *ngFor="let coluna of layoutSelecionado">
+          <hot-column title="{{coluna}}"></hot-column>
+        </div>
+  </hot-table>
+
+  <button type="submit" class="btn btn-primary botao-salvar"
+      (click)="salvar(dados.data)">Salvar</button>
+
+</div>

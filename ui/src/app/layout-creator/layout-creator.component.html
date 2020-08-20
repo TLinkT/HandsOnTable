@@ -1,0 +1,36 @@
+<script src="../../../node_modules/handsontable/dist/handsontable.full.min.js"></script>
+
+
+<div class="container">
+
+  <div class="form-group">
+    <label for="exampleInputEmail1">Layout</label>
+    <input type="text" class="form-control" id="exampleInput1" #layoutInput>
+
+    <button type="submit" class="btn btn-primary"
+      (click)="adicionar(layoutInput.value)">Adicionar</button>
+
+    <button type="submit" class="btn btn-primary botao-limpar"
+      (click)="limpar()">Limpar</button>
+  </div>
+
+  <div>
+    <hot-table class="hot-table" id="example1"
+      [colHeaders]="true"
+      [rowHeaders]="false"
+      [data]="dataset">
+        <div class="column-factory" *ngFor="let column of columns">
+          <hot-column title="{{column}}"></hot-column>
+        </div>
+    </hot-table>
+  </div>
+
+  <div class="nome-layout">
+    <label for="exampleInputEmail1">Nome do Layout</label>
+    <input type="text" class="form-control" id="exampleInput1" #nomeInput>
+
+    <button type="submit" class="btn btn-primary botao-salvar"
+      (click)="salvar(nomeInput.value)">Salvar</button>
+  </div>
+
+</div>

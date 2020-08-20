@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <form [formGroup]="myForm" (ngSubmit)="submit()">
+        <div class="form-group">
+          <label for="file">File</label>
+          <input
+            formControlName="file"
+            id="file"
+            type="file"
+            class="form-control"
+            (change)="onFileChange($event)">
+          <div *ngIf="f.file.touched && f.file.invalid" class="alert alert-danger">
+            <div *ngIf="f.file.errors.required">File is required.</div>
+          </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <pre>{{response | json}}</pre>
+    </div>
+  </div>
+</div>
+
+
+<h1>LINK <a href="https://github.com/handsontable/angular-handsontable" target="_blank">Handsntable</a> </h1>

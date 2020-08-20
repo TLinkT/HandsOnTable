@@ -1,0 +1,65 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "layouts": [
+    {
+      "nome": "Exemplo de Estrutura",
+      "colunas": [
+        "coluna 1",
+        "coluna 2",
+        "coluna 3",
+        "coluna 4",
+        "coluna 5"
+      ],
+      "id": 1
+    }
+  ],
+  "dados": [
+    {
+      "dados": [
+        {
+          "0": "Levyson",
+          "1": "1234",
+          "2": "3,5",
+          "name": ""
+        }
+      ],
+      "colunas": [
+        "Aluno",
+        "Matricula",
+        "Notas"
+      ],
+      "id": 1
+    },
+    {
+      "dados": [
+        {
+          "0": "Alexia",
+          "1": "5678",
+          "2": "2,0"
+        }
+      ],
+      "colunas": [
+        "Aluno",
+        "Matricula",
+        "Notas"
+      ],
+      "id": 2
+    }
+  ]
+}

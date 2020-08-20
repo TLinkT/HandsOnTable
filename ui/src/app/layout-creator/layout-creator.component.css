@@ -1,0 +1,20 @@
+.container {
+  margin-top: 20px;
+}
+
+.form-control {
+  margin-bottom: 50px;
+}
+
+.btn-primary {
+  margin-bottom: 50px;
+}
+
+.botao-salvar {
+  margin-top: 50px;
+}
+
+.botao-limpar {
+  margin-left: 20px;
+  margin-top: auto;
+}
