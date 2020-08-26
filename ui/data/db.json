@@ -27,6 +27,17 @@
         "coluna 5"
       ],
       "id": 1
+    },
+    {
+      "nome": "Bla",
+      "colunas": [
+        "Idade",
+        "Idade",
+        "Idade",
+        "Idade",
+        "Idade"
+      ],
+      "id": 2
     }
   ],
   "dados": [
